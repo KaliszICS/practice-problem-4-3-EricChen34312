@@ -1,27 +1,58 @@
-public class PracticeProblem {
+class Rectangle{
+	double length;
+	double width;
 
-	public static void main(String args[]) {
-
+	//Constructors
+	public Rectangle(){
+		this.length = 4;
+		this.width = 8;
 	}
 
-	public static void q1() {
-		//Write question 1 code here
+	public Rectangle(double length){
+		this.length = length;
+		this.width = 8;
 	}
 
-	public static void q2() {
-		//Write question 2 code here
+	public Rectangle(double length, double width){
+		this.length = length;
+		this.width = width;
 	}
 
-	public static void q3() {
-		//Write question 3 code here
+	//Getters
+
+	public double getWidth(){
+		return this.width;
 	}
 
-	public static void q4() {
-		//Write question 4 code here
+	public double getLength(){
+		return this.length;
+	}
+}
+
+class Chair{
+	int legs;
+	String material;
+
+	public Chair(){
+		this.legs = 4;
+		this.material = "wood";
 	}
 
-	public static void q5() {
-		//Write question 5 code here
+	public Chair(int legs){
+		this.legs = legs;
+		this.material = "wood";
 	}
 
+	public Chair(int legs, String material){
+		this.legs = legs;
+		this.material = material;
+	}
+
+	public int getLegs(){
+		return this.legs;
+	}
+
+	public String getMaterial(){
+		return this.material;
+	}
 }
